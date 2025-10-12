@@ -1,0 +1,55 @@
+/* Styles pour la page de contact */
+
+
+/* Conteneur principal pour la mise en page à deux colonnes (formulaire et coordonnées) */
+.about-skills {
+  display: flex;
+  gap: 2rem; /* Espace entre les deux colonnes */
+  flex-wrap: wrap; /* Permet aux colonnes de passer l'une sous l'autre sur les petits écrans */
+}
+
+/* Colonne de gauche (formulaire) */
+.about {
+  flex: 1; /* Prend l'espace disponible */
+  min-width: 300px; /* Largeur minimale avant de passer à la ligne */
+}
+
+/* Colonne de droite (coordonnées) */
+.skills {
+  flex: 1; /* Prend l'espace disponible */
+  min-width: 400px; /* Largeur minimale avant de passer à la ligne */
+}
+
+/* Style pour le champ de texte du message */
+.contact-textarea {
+  height: 250px;
+  width: 100%;
+}
+
+/* Style pour le bouton d'envoi, pour le centrer proprement */
+.contact-submit-btn {
+  width: 100px; /* Largeur augmentée pour une meilleure apparence */
+  height: 40px;
+  display: block; /* Utiliser block et margin auto pour le centrage horizontal */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Style pour les icônes dans la section des coordonnées */
+.contact-icon {
+  margin-right: 10px; /* Espace entre l'icône et le texte */
+  vertical-align: middle; /* Aligne l'icône avec le milieu du texte */
+}
+
+/* Style pour la carte Google Maps */
+.map-container iframe {
+  border: none; /* Supprime la bordure par défaut */
+  border-radius: 8px; /* Ajoute des coins arrondis */
+}
+.btn{
+    border-radius: 10px;
+    padding: 10px;
+    width: 100px;
+    height: auto;
+
+}

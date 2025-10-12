@@ -1,0 +1,44 @@
+.btn {
+  width: 100px;
+  border-radius: 0;
+  padding: 10px;
+}
+.buttons {
+  gap: 10px;
+  display: flex;
+  justify-content: flex-start;
+}
+.text h1 {
+  /* Empêche le texte de passer à la ligne pendant l'animation */
+  white-space: nowrap;
+  /* Cache le texte qui n'est pas encore "tapé" */
+  overflow: hidden;
+  /* Ajoute un curseur clignotant à la fin du texte */
+  border-right: 3px solid green;
+  /* Assure que la largeur s'adapte au contenu pour l'animation */
+  width: max-content; /* Utiliser max-content pour une largeur stable */
+  /* Animation : nom, durée, fonction de temps (steps), répétition */
+  animation: typing 2.5s steps(12, end) infinite alternate,
+    /* Animation de frappe */ blink-caret 0.75s step-end infinite; /* Animation du curseur */
+}
+
+/* Animation pour l'effet de frappe */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%; /* Anime la largeur jusqu'à 100% du conteneur */
+  }
+}
+
+/* Animation pour le curseur qui clignote */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: green;
+  }
+}

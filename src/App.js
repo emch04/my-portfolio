@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
+// Importation des composants de page
+import Home from "./component/Home.jsx";
+import About from "./component/About.jsx";
+import Portfolio from "./component/Portfolio.jsx";
+import Contact from "./component/Contact.jsx";
+import Navigation from "./component/Navigation.jsx";
+
+// Importation des styles globaux
+import "./App.css";
+
+// Composant principal de l'application
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* Le composant Navigation est affiché sur toutes les pages car il est en dehors du composant Routes */}
+      <Navigation />
+
+      {/* Le contenu principal de la page qui changera en fonction de l'URL */}
+      <main className="content-wrap">
+        <Home />
+        <Portfolio />
+        <Contact />
+        <About />
+      </main>
     </div>
   );
 }

@@ -1,12 +1,12 @@
 import React from "react";
-import "./css/contact.css";
+import "./css/Contact.css";
 
 // Composant pour la page "Contact"
 const Contact = () => {
   return (
     // Conteneur principal de la page. Vous pouvez ajouter une classe CSS pour le styliser.
     // Exemple : <div className="contact-container">
-    <div id="contact" className="container mt-5 text-light">
+    <div id="contact" className="container mt-5 text">
       {/* Titre de la page */}
       <h2 className="text-center fw-bold text">Contact</h2>
       <p className="text-center text-muted" style={{ marginBottom: 20 }}>

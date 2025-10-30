@@ -42,9 +42,9 @@ const Home = () => {
           */}
           <div className="col-12">
             <div className="text">
-              <h1>Hi, I'm Emch</h1>
+              <h1 id="text-title">Hi, I'm Emch</h1>
               <h2>Passionné de programmation</h2>
-              <p>Bienvenue sur mon portfolio !</p>
+              <p className="p">Bienvenue sur mon portfolio !</p>
             </div>
 
             {/*

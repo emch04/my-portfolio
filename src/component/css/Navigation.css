@@ -1,3 +1,20 @@
 .navbar-custom-black {
     background-color: #000000;
+
+}
+.container-fluid {
+    padding-left: 150px;
+    padding-right: 100px;
+}
+.nav-link {
+    color: white;
+    font-weight: 600;
+    font-family: "nunito", sans-serif;
+    font-style: bold;
+}
+.nav-link:hover {
+    color: green;
+    font-weight: 600;
+    font-family: "nunito", sans-serif;
+    font-style: bold;
 }

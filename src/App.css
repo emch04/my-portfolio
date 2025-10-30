@@ -3,6 +3,37 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+ 
+}
 
+body {
+  scroll-behavior: smooth;
+   font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+}
+h1,h2,h3,h4,h5,h6{
+  font-weight: 600;
+  font-family: "nunito", sans-serif;
+  font-style: bold;
+}
+
+/* Style de base pour toutes les sections (Portfolio, About, Contact) */
+.section-container {
+  padding: 60px 0;
+  position: relative;
+}
+
+/* Effet "verre liquide" */
+.glass-effect {
+  color: white;
+  background-color: black; /* Fond noir semi-transparent */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* Pour la compatibilité avec Safari */
+  border-radius: 15px; /* Coins arrondis */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 7); /* Ombre portée */
+  margin-top: 2rem;
+  padding: 2rem;
 }

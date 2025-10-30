@@ -8,7 +8,7 @@
   display: flex;
   justify-content: flex-start;
 }
-.text h1 {
+#text-title {
   /* Empêche le texte de passer à la ligne pendant l'animation */
   white-space: nowrap;
   /* Cache le texte qui n'est pas encore "tapé" */
@@ -28,7 +28,7 @@
     width: 0;
   }
   to {
-    width: 100%; /* Anime la largeur jusqu'à 100% du conteneur */
+    width: 400px; /* Anime la largeur jusqu'à 400px du conteneur */
   }
 }
 
@@ -41,4 +41,12 @@
   50% {
     border-color: green;
   }
+}
+.p{
+  font-size: 20px;
+  line-height: 1.6;
+  color: green;
+  font-family: "nunito", sans-serif;
+  font-size: bold;
+
 }

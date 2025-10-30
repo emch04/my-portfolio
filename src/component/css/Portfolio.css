@@ -1,0 +1,25 @@
+/* Styles pour le composant Portfolio */
+.card-img-top {
+  height: 300px; /* Hauteur fixe pour une uniformité visuelle */
+  object-fit: cover; /* Couvre toute la zone sans déformer l'image */
+  width: 100%; /* Largeur à 100% du conteneur */
+}
+.card {
+  /* La largeur sera gérée par la grille Bootstrap pour la responsivité */
+  /* La hauteur s'adaptera au contenu */
+  height: 100%; /* Permet aux cartes d'une même ligne d'avoir la même hauteur */
+  background-color: rgba(0, 0, 0, 0.15); /* Fond noir semi-transparent */
+  color: white; /* Texte en blanc pour la lisibilité */
+  /* backdrop-filter: blur(5px); */
+}
+.progress {
+  /* centre le conteneur de la barre de progression */
+  margin: 0 auto; /* place le bloc au centre horizontalement */
+  display: block; /* s'assure que margin auto fonctionne */
+}
+
+.progress-bar {
+  /* garde la barre à l'intérieur du conteneur et centré verticalement si nécessaire */
+  display: block;
+  height: 100%;
+}

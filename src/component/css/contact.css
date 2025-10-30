@@ -1,5 +1,21 @@
 /* Styles pour la page de contact */
-
+#contact {
+  padding: 50px 0; /* Espace en haut et en bas */
+  font-family: "nunito", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+/* .form-control {
+  font-family: "nunito", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  background-color: green;
+} */
 
 /* Conteneur principal pour la mise en page à deux colonnes (formulaire et coordonnées) */
 .about-skills {
